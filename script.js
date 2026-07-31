@@ -1,13 +1,13 @@
-/* =========================
+/* 
         FINLAY.EXE
         SCRIPT.JS
-========================= */
+*/
 
 
 
-/* =========================
+/* 
         BOOT SEQUENCE
-========================= */
+ */
 
 
 const bootScreen = document.getElementById("boot-screen");
@@ -162,9 +162,9 @@ if(bootScreen){
 
 
 
-/* =========================
+/* 
         WIRE FRAME BACKGROUND
-========================= */
+ */
 
 
 const canvas = document.getElementById("wireframe");
@@ -279,7 +279,7 @@ function draw(){
 
 
 
-    let spacing = 50;
+    let spacing = 40;
 
 
 
