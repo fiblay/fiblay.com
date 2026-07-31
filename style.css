@@ -43,28 +43,18 @@ body {
     position:fixed;
 
     top:0;
-
     left:0;
 
     width:100vw;
-
     height:100vh;
 
+    z-index:0;
 
-    z-index:-1;
+    pointer-events:none;
 
-
-    opacity:.25;
-
-
-    filter:
-
-        drop-shadow(
-            0 0 4px #355f22
-        );
+    opacity:.35;
 
 }
-
 
 
 
@@ -79,7 +69,13 @@ body {
 
 }
 
+.site {
 
+    position:relative;
+
+    z-index:1;
+
+}
 
 
 

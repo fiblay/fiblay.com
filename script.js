@@ -152,7 +152,24 @@ function typeBoot(){
 
 if(bootScreen){
 
+    if (!localStorage.getItem("finlayBooted")) {
+
     typeBoot();
+
+    localStorage.setItem(
+        "finlayBooted",
+        "true"
+    );
+
+} else {
+
+    if (bootScreen) {
+
+        bootScreen.remove();
+
+    }
+
+}
 
 }
 
