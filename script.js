@@ -23,7 +23,7 @@ const bootLines = [
 
     "Initializing graphics driver... OK",
 
-    "Loading 3D renderer... OK",
+    "Loading 3D renderer... OK", 
 
     "Loading Blender assets... OK",
 
