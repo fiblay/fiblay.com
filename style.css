@@ -524,7 +524,7 @@ section {
     text-align:center;
 
 
-    padding:70px 0;
+    padding:40px 0;
 
 }
 
@@ -1016,69 +1016,34 @@ footer {
 
 
 /* =========================
-        MOBILE
+        MOBILE OPTIMIZATION
+        FINLAY.EXE
 ========================= */
 
 
-@media(max-width:1000px){
-
-
-    .site {
-
-        width:95%;
-
-    }
-
-
-
-    .projects {
-
-        grid-template-columns:1fr;
-
-    }
-
-
-
-    header {
-
-        flex-direction:column;
-
-        gap:20px;
-
-    }
-
-
-
-    .hero h1 {
-
-        font-size:30px;
-
-    }
-
-
-} 
-
-/* =========================
-        MOBILE FIXES
-========================= */
-
-
-@media(max-width:1000px){
+@media screen and (max-width:600px){
 
 
     .site {
 
         width:92%;
 
+        padding-bottom:50px;
+
     }
 
 
+
+
+    /* HEADER */
 
     header {
 
         flex-direction:column;
 
-        gap:20px;
+        align-items:center;
+
+        gap:18px;
 
         padding:15px;
 
@@ -1090,19 +1055,25 @@ footer {
 
         font-size:20px;
 
+        text-align:center;
+
     }
 
 
 
-    /* NAV BAR */
 
-    nav {
+
+    /* NAVIGATION */
+
+    header nav {
 
         width:100%;
 
         display:grid;
 
-        grid-template-columns:repeat(3, 1fr);
+        grid-template-columns:
+
+            repeat(3, 1fr);
 
         gap:8px;
 
@@ -1110,15 +1081,21 @@ footer {
 
 
 
-    nav a {
+    header nav a {
 
         margin:0;
 
+        width:100%;
+
+        padding:10px 3px;
+
+
+        font-size:9px;
+
         text-align:center;
 
-        padding:10px 5px;
 
-        font-size:10px;
+        white-space:nowrap;
 
     }
 
@@ -1126,16 +1103,101 @@ footer {
 
 
 
-    /* SKILLS GRID */
 
+    /* HERO */
+
+    .hero {
+
+        padding-top:40px;
+
+        padding-bottom:40px;
+
+    }
+
+
+
+    .hero h1 {
+
+        font-size:25px;
+
+        line-height:1.5;
+
+    }
+
+
+
+
+    .hero p {
+
+        font-size:10px;
+
+        line-height:2;
+
+    }
+
+
+
+
+
+
+
+    /* WINDOWS / PANELS */
+
+    .window-content {
+
+        padding:20px;
+
+    }
+
+
+
+
+    h2 {
+
+        font-size:16px;
+
+    }
+
+
+
+
+
+
+
+    /* PROJECTS */
+
+    .projects {
+
+        grid-template-columns:1fr;
+
+        gap:20px;
+
+    }
+
+
+
+    .project img {
+
+        height:180px;
+
+    }
+
+
+
+
+
+
+
+
+    /* SKILLS */
 
     .skills ul {
 
-        display:grid;
+        display:grid !important;
 
         grid-template-columns:
 
-            repeat(2, 1fr);
+            repeat(2,1fr) !important;
 
 
         gap:10px;
@@ -1148,11 +1210,18 @@ footer {
 
     .skills li {
 
-        text-align:center;
+        width:100%;
 
         padding:12px 5px;
 
-        font-size:10px;
+
+        font-size:9px;
+
+
+        text-align:center;
+
+
+        white-space:nowrap;
 
     }
 
@@ -1160,9 +1229,31 @@ footer {
 
 
 
-    .projects {
 
-        grid-template-columns:1fr;
+
+    /* SOCIAL BUTTONS */
+
+    .socials {
+
+        display:grid;
+
+        grid-template-columns:
+
+            repeat(2,1fr);
+
+        gap:10px;
+
+    }
+
+
+
+    .social-button {
+
+        min-width:0;
+
+        padding:12px 5px;
+
+        font-size:9px;
 
     }
 
@@ -1170,11 +1261,70 @@ footer {
 
 
 
-    .hero h1 {
 
-        font-size:28px;
+
+    /* VISITOR COUNTER */
+
+    .visitor-count {
+
+        max-width:100%;
+
+        text-align:center;
+
+        font-size:9px;
 
     }
 
+
+
+
+
+    footer {
+
+        padding-bottom:40px;
+
+    }
+
+
+}
+
+/*
+        SMALL MOBILE NAV FIX*/
+@media screen and (max-width:600px){
+
+    header nav {
+
+        display:flex;
+
+        justify-content:center;
+
+        flex-wrap:nowrap;
+
+        gap:5px;
+
+        width:100%;
+
+    }
+
+
+    header nav a {
+
+        flex:1;
+
+        min-width:0;
+
+        padding:8px 2px;
+
+        margin:0;
+
+        font-size:7px;
+
+        letter-spacing:-1px;
+
+        text-align:center;
+
+        white-space:nowrap;
+
+    }
 
 }
