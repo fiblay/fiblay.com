@@ -1,0 +1,404 @@
+/* =========================
+   FINLAY.EXE PROJECT MODAL
+========================= */
+
+
+#project-modal {
+
+    display:none;
+
+    position:fixed;
+
+    inset:0;
+
+    background:
+
+        rgba(0,0,0,.75);
+
+
+    z-index:999999;
+
+
+    justify-content:center;
+
+    align-items:center;
+
+
+    padding:30px;
+
+}
+
+
+
+/* MAIN WINDOW */
+
+#project-window {
+
+
+    width:900px;
+
+    max-width:95vw;
+
+
+    max-height:90vh;
+
+
+    overflow:hidden;
+
+
+    background:#090d09;
+
+
+    border:
+
+        3px solid #5f9f3a;
+
+
+    border-radius:10px;
+
+
+    box-shadow:
+
+        0 15px 50px black;
+
+
+}
+
+
+
+/* TITLE BAR */
+
+#project-window .window-bar {
+
+
+    display:flex;
+
+
+    justify-content:space-between;
+
+
+    align-items:center;
+
+
+    padding:12px 18px;
+
+
+    background:
+
+
+        linear-gradient(
+            #78b84a,
+            #345b22
+        );
+
+
+    color:#071006;
+
+
+    font-family:
+
+        "Courier New",
+        monospace;
+
+
+    font-weight:bold;
+
+
+}
+
+
+
+
+
+#close-project {
+
+
+    background:#111;
+
+
+    color:#8fd65c;
+
+
+    border:
+
+        1px solid #8fd65c;
+
+
+    width:30px;
+
+    height:30px;
+
+
+    cursor:pointer;
+
+
+}
+
+
+
+
+
+/* CONTENT AREA */
+
+
+#project-body {
+
+
+    padding:30px;
+
+
+    overflow-y:auto;
+
+
+    max-height:80vh;
+
+
+}
+
+
+
+/* MAIN IMAGE */
+
+
+#main-image {
+
+
+    display:block;
+
+
+    width:100%;
+
+
+    max-height:450px;
+
+
+    object-fit:contain;
+
+
+    background:black;
+
+
+    border:
+
+        2px solid #355d22;
+
+
+}
+
+
+
+/* THUMBNAILS */
+
+
+#thumbnail-row {
+
+
+    display:flex;
+
+
+    gap:12px;
+
+
+    margin-top:20px;
+
+
+    overflow-x:auto;
+
+
+}
+
+
+
+#thumbnail-row img {
+
+
+    width:100px;
+
+
+    height:70px;
+
+
+    object-fit:cover;
+
+
+    cursor:pointer;
+
+
+    border:
+
+        2px solid #355d22;
+
+
+    transition:.2s;
+
+
+}
+
+
+
+#thumbnail-row img:hover {
+
+
+    border-color:#9be35d;
+
+
+    transform:translateY(-3px);
+
+
+}
+
+
+
+
+
+/* TEXT SECTIONS */
+
+
+.project-section {
+
+
+    margin-top:35px;
+
+
+    padding-top:20px;
+
+
+    border-top:
+
+        1px solid #355d22;
+
+
+}
+
+
+
+
+.project-section h3 {
+
+
+    color:#8fd65c;
+
+
+    font-family:
+
+        "Courier New",
+        monospace;
+
+
+    margin-bottom:12px;
+
+
+}
+
+
+
+
+.project-section p,
+
+
+.project-section li {
+
+
+    color:#ccc;
+
+
+    line-height:1.6;
+
+
+}
+
+
+
+/* SOFTWARE LIST */
+
+
+#project-software {
+
+
+    list-style:none;
+
+
+    display:flex;
+
+
+    flex-wrap:wrap;
+
+
+    gap:10px;
+
+
+}
+
+
+
+#project-software li {
+
+
+    padding:
+
+        8px 14px;
+
+
+    background:#111;
+
+
+    border:
+
+        1px solid #5f9f3a;
+
+
+    color:#8fd65c;
+
+
+    border-radius:5px;
+
+
+}
+
+
+
+/* TAGS */
+
+
+#project-tags {
+
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:10px;
+
+
+}
+
+
+
+#project-tags span {
+
+
+    padding:
+
+        8px 14px;
+
+
+    background:
+
+        linear-gradient(
+            #1c2718,
+            #090d09
+        );
+
+
+    border:
+
+        1px solid #5f9f3a;
+
+
+    color:#8fd65c;
+
+
+    border-radius:5px;
+
+
+}

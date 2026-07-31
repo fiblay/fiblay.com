@@ -8,273 +8,361 @@
     <title>FIBLAY | 3D Artist</title>
 
     <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="modal.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <script data-goatcounter="https://fiblay.goatcounter.com/count"
-        async src="//gc.zgo.at/count.js"></script>
-        
+    <script data-goatcounter="https://fiblay.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+
 </head>
 
- 
+
 <body>
-<canvas id="wireframe"></canvas>
-<div id="boot-screen">
+    <canvas id="wireframe"></canvas>
+    <div id="boot-screen">
 
-    <div id="boot-container">
+        <div id="boot-container">
 
-        <div id="boot-text">
-            <span id="cursor">_</span>
-        </div>
-
-
-        <div id="loading-bar">
-
-            <div id="loading-fill"></div>
-
-        </div>
+            <div id="boot-text">
+                <span id="cursor">_</span>
+            </div>
 
 
-        <div id="loading-percent">
-            0%
+            <div id="loading-bar">
+
+                <div id="loading-fill"></div>
+
+            </div>
+
+
+            <div id="loading-percent">
+                0%
+            </div>
+
         </div>
 
     </div>
 
-</div>
+    <div class="site">
 
-<div class="site">
+        <!-- Header -->
+        <header>
 
-    <!-- Header -->
-    <header>
-
-        <div class="logo">
-            fiblay
-        </div>
-
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#work">Projects</a>
-            <a href="#about">About</a>
-            <a href="#network">Contact</a>
-        </nav>
-
-    </header>
-
-
-    <!-- Hero -->
-    <section id="home" class="hero">
-
-        <div class="window">
-
-            <div class="window-bar">
+            <div class="logo">
+                fiblay
             </div>
 
-            <div class="window-content">
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#work">Projects</a>
+                <a href="#about">About</a>
+                <a href="#network">Contact</a>
+            </nav>
 
-                <h1>
-                    MULTIMEDIA ARTIST<br>
-                    & GAME DEVELOPER
-                </h1>
+        </header>
 
-                <p>
-                    Creating immersive worlds through art and code.
-                </p>
+
+        <!-- Hero -->
+        <section id="home" class="hero">
+
+            <div class="window">
+
+                <div class="window-bar">
+                </div>
+
+                <div class="window-content">
+
+                    <h1>
+                        MULTIMEDIA ARTIST<br>
+                        & GAME DEVELOPER
+                    </h1>
+
+                    <p>
+                        Creating immersive worlds through art and code.
+                    </p>
+                </div>
+
             </div>
 
-        </div>
-
-    </section>
+        </section>
 
 
 
-    <!-- Projects -->
-    <section id="work">
+        <!-- Projects -->
+        <section id="work">
 
-        <h2>
-            Featured Projects
-        </h2>
-
-
-        <div class="projects">
+            <h2>
+                Featured Projects
+            </h2>
 
 
-            <div class="project">
+            <div class="projects">
 
-                <img src="assets/Images/project1.png" alt="Project">
 
-                <h3>
-                    My First Render
-                </h3>
+         <div class="project" onclick="openProject('firstRender')">
 
-                <p>
-                    The first render I created using Blender 4.0 without following any online tutorials  
-                </p>
+                    <img src="assets/Images/project1.png" alt="Project">
 
-                <a href="#">
-                    View Project
+                    <h3>
+                        My First Render
+                    </h3>
+
+                    <p>
+                        The first render I created using Blender 4.0 without following any online tutorials
+                    </p>
+
+                     <a href="#" onclick="event.stopPropagation(); openProject('firstRender')">
+                        View Project
+                    </a>
+
+                </div>
+
+
+
+             <div class="project" onclick="openProject('penguin')">
+
+                    <img src="assets/Images/staycool.png" alt="Penguin Character">
+
+                    <h3>
+                        Penguin Character Render
+                    </h3>
+
+                    <p>
+                        Penguin Character i created to experiment with character design in Blender 5. I also used this
+                        character to learn rigging and animation, and will be using him in my current game project.
+                    </p>
+
+                     <a href="#" onclick="event.stopPropagation(); openProject('penguin')">
+                        View Project
+                    </a>
+
+                </div>
+
+
+
+                <div class="project" onclick="openProject('hallway')">
+
+                    <img src="assets/Images/halls.jpg" alt="long spanning hallway render">
+
+                    <h3>
+                        Hallway Liminal Render
+                    </h3>
+
+                    <p>
+                        My favourite render I have created. Modeled and Textured using Blender 4.1 and composited in
+                        Adobe Photoshop to give it the "digicam" feel.
+                    </p>
+                    <a href="#" onclick="event.stopPropagation(); openProject('hallway')">
+                        View Project
+                    </a>
+
+            </div>
+            </div>
+
+            <div class="portfolio-button" >
+
+                <a href="portfolio.html" class="button">
+                    ACCESS PORTFOLIO
                 </a>
 
             </div>
+        </section>
 
 
 
-            <div class="project">
 
-                <img src="assets/Images/staycool.png" alt="Penguin Character">
+        <!-- About -->
 
-                <h3>
-                    Penguin Character Render
-                </h3>
+        <section id="about">
 
-                <p>
-                    Penguin Character i created to experiment with character design in Blender 5. I also used this character to learn rigging and animation, and will be using him in my current game project.
-                </p>
+            <div class="window">
 
-                <a href="#">
-                    View Project
-                </a>
+                <div class="window-bar">
+                </div>
+
+
+                <div class="window-content">
+
+                    <h2>
+                        About Me
+                    </h2>
+
+                    <p>
+                        I'm a 3D artist and game developer focused on creating atmospheric environments and interactive
+                        experiences.
+                    </p>
+
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+
+
+
+        <!-- Skills -->
+
+        <section class="skills">
+
+            <h2>
+                Skills
+            </h2>
+
+
+            <ul>
+
+                <li>Blender</li>
+                <li>GIMP</li>
+                <LI>Adobe Lightroom</LI>
+                <li>Davinci Resolve</li>
+                <li>Godot</li>
+                <li>Unity</li>
+                <li>Git</li>
+                <li>Web Development</li>
+
+            </ul>
+
+
+        </section>
+
+
+        <!-- Social Links -->
+
+        <section id="network">
+
+            <div class="window">
+
+                <div class="window-bar">
+                    NETWORK
+                </div>
+
+
+                <div class="window-content">
+
+
+                    <div class="socials">
+
+
+                        <a href="https://github.com/fiblay" target="_blank" rel="noopener noreferrer"
+                            class="social-button">
+                            <i class="fa-brands fa-github"></i>
+                            GitHub
+                        </a>
+
+                        <a href="https://fiblay.itch.io/" target="_blank" rel="noopener noreferrer"
+                            class="social-button">
+                            <i class="fa-brands fa-itch-io"></i>
+                            Itch.io
+                        </a>
+
+                        <a href="https://www.youtube.com/@fiblayy" target="_blank" rel="noopener noreferrer"
+                            class="social-button">
+                            <i class="fa-brands fa-youtube"></i>
+                            YouTube
+                        </a>
+
+
+                        <a href="https://www.instagram.com/fiblayy/" target="_blank" rel="noopener noreferrer"
+                            class="social-button">
+                            <i class="fa-brands fa-instagram"></i>
+                            Instagram
+                        </a>
+
+                        <a href="https://discord.com/users/680056066939158548" target="_blank" rel="noopener noreferrer"
+                            class="social-button">
+                            <i class="fa-brands fa-discord"></i>
+                            Discord
+                        </a>
+
+
+                    </div>
+
+
+                </div>
 
             </div>
 
+        </section>
 
 
-            <div class="project">
+        <div class="visitor-count">
 
-                <img src="assets/Images/halls.jpg" alt="long spanning hallway render">
-
-                <h3>
-                    Hallway Liminal Render
-                </h3>
-
-                <p>
-                    My favourite render I have created. Modeled and Textured using Blender 4.1 and composited in Adobe Photoshop to give it the "digicam" feel. 
-                </p>
-
-                <a href="#">
-                    View Project
-                </a>
-
-            </div>
+            Visitors:
+            <span id="visitors">000010</span>
 
         </div>
 
-        <div class="portfolio-button">
 
-     <a href="portfolio.html" class="button">
-        ACCESS PORTFOLIO 
-    </a>
+        <!-- Footer -->
 
-</div>
-    </section>
+        <footer>
 
+            <p>
+                2026 FIBLAY
 
-
-
-    <!-- About -->
-
-    <section id="about">
-
-        <div class="window"> 
-
-            <div class="window-bar">
-            </div>
+        </footer>
 
 
-            <div class="window-content">
+    </div>
 
-                <h2>
-                    About Me
-                </h2>
+    <!-- PROJECT POPUP -->
 
-                <p>
-                    I'm a 3D artist and game developer focused on creating atmospheric environments and interactive experiences.
-                </p>
+<div id="project-modal">
 
-
-            </div>
-
-        </div>
-
-
-    </section>
-
-
-
-
-
-    <!-- Skills -->
-
-    <section class="skills">
-
-        <h2>
-            Skills
-        </h2>
-
-
-        <ul>
-
-            <li>Blender</li>
-            <li>GIMP</li>
-            <LI>Adobe Lightroom</LI>
-            <li>Davinci Resolve</li>
-            <li>Godot</li> 
-            <li>Unity</li>
-            <li>Git</li>
-            <li>Web Development</li>
-
-        </ul>
-
-
-    </section>
-
-
-    <!-- Social Links -->
-
-<section id="network">
-
-    <div class="window">
+    <div id="project-window">
 
         <div class="window-bar">
-            NETWORK
+
+            <span id="project-title">
+                PROJECT.EXE</span>
+
+            <button id="close-project">✕</button>
+
         </div>
 
 
-        <div class="window-content">
+        <div id="project-body">
 
 
-            <div class="socials">
+            <img id="main-image">
 
 
-                <a href="https://github.com/fiblay" target="_blank" 
-rel="noopener noreferrer" class="social-button">
-                    <i class="fa-brands fa-github"></i>
-                    GitHub
-                </a>
+            <div id="thumbnail-row">
 
-                <a href="https://fiblay.itch.io/" target="_blank" 
-rel="noopener noreferrer" class="social-button">
-                    <i class="fa-brands fa-itch-io"></i>
-                    Itch.io
-                </a>
-
-                <a href="https://www.youtube.com/@fiblayy" target="_blank" 
-rel="noopener noreferrer" class="social-button">
-                    <i class="fa-brands fa-youtube"></i>
-                    YouTube
-                </a>
+            </div>
 
 
-                <a href="https://www.instagram.com/fiblayy/" target="_blank" 
-rel="noopener noreferrer" class="social-button">
-                    <i class="fa-brands fa-instagram"></i>
-                    Instagram
-                </a>
+            <div class="project-section">
 
-                <a href="https://discord.com/users/680056066939158548" target="_blank" 
-rel="noopener noreferrer" class="social-button">
-                    <i class="fa-brands fa-discord"></i>
-                    Discord
-                </a>
+                <h3>Description</h3>
 
+                <p id="project-description"></p>
+
+            </div>
+
+
+
+            <div class="project-section">
+
+                <h3>Software</h3>
+
+                <ul id="project-software">
+
+                </ul>
+
+            </div>
+
+
+
+            <div class="project-section">
+
+                <h3>Tags</h3>
+
+                <div id="project-tags">
+
+                </div>
 
             </div>
 
@@ -283,31 +371,11 @@ rel="noopener noreferrer" class="social-button">
 
     </div>
 
-</section>
-
-
-<div class="visitor-count">
-
-    Visitors:
-    <span id="visitors">000010</span>
-
 </div>
 
-
-    <!-- Footer -->
-
-    <footer>
-
-        <p>
-            2026 FIBLAY
-
-    </footer>
-
-
-</div>
-
-<script src="script.js"></script>
-
+   <script src="projects.js"></script>
+    <script src="modal.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
