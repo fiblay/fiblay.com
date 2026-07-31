@@ -1057,3 +1057,124 @@ footer {
 
 
 } 
+
+/* =========================
+        MOBILE FIXES
+========================= */
+
+
+@media(max-width:1000px){
+
+
+    .site {
+
+        width:92%;
+
+    }
+
+
+
+    header {
+
+        flex-direction:column;
+
+        gap:20px;
+
+        padding:15px;
+
+    }
+
+
+
+    .logo {
+
+        font-size:20px;
+
+    }
+
+
+
+    /* NAV BAR */
+
+    nav {
+
+        width:100%;
+
+        display:grid;
+
+        grid-template-columns:repeat(3, 1fr);
+
+        gap:8px;
+
+    }
+
+
+
+    nav a {
+
+        margin:0;
+
+        text-align:center;
+
+        padding:10px 5px;
+
+        font-size:10px;
+
+    }
+
+
+
+
+
+    /* SKILLS GRID */
+
+
+    .skills ul {
+
+        display:grid;
+
+        grid-template-columns:
+
+            repeat(2, 1fr);
+
+
+        gap:10px;
+
+        width:100%;
+
+    }
+
+
+
+    .skills li {
+
+        text-align:center;
+
+        padding:12px 5px;
+
+        font-size:10px;
+
+    }
+
+
+
+
+
+    .projects {
+
+        grid-template-columns:1fr;
+
+    }
+
+
+
+
+
+    .hero h1 {
+
+        font-size:28px;
+
+    }
+
+
+}
