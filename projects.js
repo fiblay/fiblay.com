@@ -68,7 +68,7 @@ const projects = {
 
         software:[
 
-            "Blender 5"
+            "Blender 5" 
 
         ],
 

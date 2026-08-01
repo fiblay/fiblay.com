@@ -23,7 +23,7 @@ function loadMedia(media){
 
     mediaViewer.innerHTML = "";
 
-
+ 
 
     // IMAGE / GIF
 
