@@ -40,7 +40,7 @@ const bootLines = [
     "WELCOME TO FIBLAY.COM"
 
 ];
-
+ 
 
 let bootIndex = 0;
 
