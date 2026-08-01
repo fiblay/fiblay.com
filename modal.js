@@ -18,16 +18,16 @@ const closeButton = document.getElementById("close-project");
 
 
 
-function loadMedia(media){
+function loadMedia(media) {
 
 
     mediaViewer.innerHTML = "";
 
- 
+
 
     // IMAGE / GIF
 
-    if(media.type === "image" || media.type === "gif"){
+    if (media.type === "image" || media.type === "gif") {
 
 
         const img = document.createElement("img");
@@ -50,7 +50,7 @@ function loadMedia(media){
 
     // VIDEO
 
-    if(media.type === "video"){
+    if (media.type === "video") {
 
 
         const video = document.createElement("video");
@@ -77,8 +77,25 @@ function loadMedia(media){
 
     }
 
+if(media.type === "youtube"){
+
+    const iframe = document.createElement("iframe");
+
+    iframe.className = "project-media";
+
+    iframe.src = media.src + "?rel=0&controls=1";
+
+    iframe.frameBorder = "0";
+
+    iframe.allow =
+    "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";
+
+    iframe.allowFullscreen = true;
+
+    mediaViewer.appendChild(iframe);
 
 }
+    }
 
 
 
@@ -87,14 +104,17 @@ function loadMedia(media){
 
 
 
-function openProject(projectID){
+
+
+
+function openProject(projectID) {
 
 
     const project = projects[projectID];
 
 
 
-    if(!project){
+    if (!project) {
 
 
         console.error("Project not found:", projectID);
@@ -139,7 +159,7 @@ function openProject(projectID){
 
 
 
-    project.gallery.forEach((media)=>{
+    project.gallery.forEach((media) => {
 
 
 
@@ -151,7 +171,7 @@ function openProject(projectID){
         // IMAGE/GIF THUMBNAIL
 
 
-        if(media.type === "image" || media.type === "gif"){
+        if (media.type === "image" || media.type === "gif") {
 
 
             thumb.src = media.src;
@@ -166,7 +186,7 @@ function openProject(projectID){
         // VIDEO THUMBNAIL PLACEHOLDER
 
 
-        if(media.type === "video"){
+        if (media.type === "video") {
 
 
             thumb.src = "assets/Images/video-thumb.png";
@@ -177,7 +197,7 @@ function openProject(projectID){
 
 
 
-        thumb.onclick = function(){
+        thumb.onclick = function () {
 
 
             loadMedia(media);
@@ -207,7 +227,7 @@ function openProject(projectID){
 
 
 
-    project.software.forEach((item)=>{
+    project.software.forEach((item) => {
 
 
 
@@ -239,7 +259,7 @@ function openProject(projectID){
 
 
 
-    project.tags.forEach((tag)=>{
+    project.tags.forEach((tag) => {
 
 
 
@@ -269,7 +289,7 @@ function openProject(projectID){
 
 
 
-function closeProject(){
+function closeProject() {
 
 
     modal.style.display = "none";
@@ -296,10 +316,10 @@ closeButton.onclick = closeProject;
 
 
 
-modal.onclick = function(event){
+modal.onclick = function (event) {
 
 
-    if(event.target === modal){
+    if (event.target === modal) {
 
 
         closeProject();
@@ -316,11 +336,11 @@ modal.onclick = function(event){
 
 
 
-document.addEventListener("keydown", function(event){
+document.addEventListener("keydown", function (event) {
 
 
 
-    if(event.key === "Escape"){
+    if (event.key === "Escape") {
 
 
         closeProject();
