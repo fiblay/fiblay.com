@@ -104,7 +104,7 @@ const projects = {
             },
 
             {
-                type:"image",
+                type:"image", 
                 src:"assets/Images/Liminal Spaces/maze.jpg"
             },
 

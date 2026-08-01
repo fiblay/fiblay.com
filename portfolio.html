@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -9,10 +9,13 @@
 
     <title>FIBLAY | Portfolio Database</title>
 
+
     <link rel="stylesheet" href="style.css">
- <link rel="stylesheet" href="portfolio.css">
-    <link rel="stylesheet" 
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="modal.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
 
 </head>
 
@@ -20,81 +23,379 @@
 <body>
 
 
-<canvas id="wireframe"></canvas>
+    <canvas id="wireframe"></canvas>
 
 
 
-<div class="site">
-
-
-<header>
-
-    <div class="logo">
-        fiblay
-    </div>
-
-
-    <nav>
-
-        <a href="index.html">
-            Home
-        </a>
-
-        <a href="portfolio.html">
-            Portfolio
-        </a>
-
-        <a href="index.html#about">
-            About
-        </a>
-
-        <a href="index.html#network">
-            Contact
-        </a>
-
-    </nav>
-
-
-</header>
+    <div class="site">
 
 
 
+        <header>
 
 
-<section class="hero">
+            <div class="logo">
+                fiblay
+            </div>
 
 
-<div class="window">
+
+            <nav>
+
+                <a href="index.html">
+                    Home
+                </a>
+
+
+                <a href="portfolio.html">
+                    Portfolio
+                </a>
+
+
+                <a href="index.html#about">
+                    About
+                </a>
+
+
+                <a href="index.html#network">
+                    Contact
+                </a>
+
+
+            </nav>
+
+
+        </header>
+
+
+
+
+
+
+
+
+
+        <section class="hero">
+
+
+            <div class="window">
+
+
+                <div class="window-bar">
+
+                    PORTFOLIO.EXE
+
+                </div>
+
+
+
+                <div class="window-content">
+
+
+                    <h1>
+                        PORTFOLIO
+                    </h1>
+
+
+                    <p>
+                        All projects and experiments.
+                    </p>
+
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+
+
+
+
+
+
+
+        <!-- 3D ARTWORK -->
+
+        <section>
+
+
+            <h2>
+                3D_ARTWORK
+            </h2>
+
+
+
+            <div class="projects">
+
+
+
+
+
+                <div class="project" onclick="openProject('liminalSpaces')">
+
+
+                    <img src="assets/Images/Liminal Spaces/halls.jpg">
+
+
+                    <h3>
+                        LIMINAL SPACES
+                    </h3>
+
+
+                    <p>
+                        Blender environments exploring atmosphere, lighting, and forgotten spaces.
+                    </p>
+
+
+                    <a href="#" onclick="event.preventDefault(); event.stopPropagation(); openProject('liminalSpaces')">
+                        VIEW PROJECT
+                    </a>
+
+
+                </div>
+
+
+
+
+
+
+
+
+
+                <div class="project" onclick="openProject('vintageCGI')">
+
+
+                    <img src="assets/Images/Vintage CGI/greenRoom.jpg">
+
+
+                    <h3>
+                        VINTAGE CGI
+                    </h3>
+
+
+                    <p>
+                        Experimental 3D artwork inspired by early digital graphics.
+                    </p>
+
+
+                    <a href="#" onclick="event.preventDefault(); event.stopPropagation(); openProject('vintageCGI')">
+                        VIEW PROJECT
+                    </a>
+
+
+                </div>
+
+
+
+
+
+
+
+
+
+                <div class="project" onclick="openProject('misc')">
+
+
+                    <img src="assets/Images/Misc/Inflated_Text.jpg">
+
+
+                    <h3>
+                        MISC PROJECTS
+                    </h3>
+
+
+                    <p>
+                        Various Blender experiments and visual tests.
+                    </p>
+
+
+                    <a href="#" onclick="event.preventDefault(); event.stopPropagation(); openProject('misc')">
+                        VIEW PROJECT
+                    </a>
+
+
+                </div>
+
+
+
+
+
+            </div>
+
+
+        </section>
+
+
+
+
+
+
+
+
+
+        <!-- GAME DEV -->
+
+
+        <section>
+
+
+            <h2>
+                GAME_DEV
+            </h2>
+
+
+
+            <div class="projects">
+
+
+
+
+
+                <div class="project" onclick="openProject('isochat')">
+
+
+                    <img src="assets/Images/game1.png">
+
+
+                    <h3>
+                        ISOCHAT
+                    </h3>
+
+
+                    <p>
+                        A Pokemon Snap inspired liminal photography game currently in development.
+                    </p>
+
+
+                    <a href="#" onclick="event.preventDefault(); event.stopPropagation(); openProject('isochat')">
+                        VIEW PROJECT
+                    </a>
+
+
+                </div>
+
+
+
+
+            </div>
+
+
+        </section>
+
+
+
+
+
+
+
+
+
+        <!-- PHOTOGRAPHY -->
+
+
+        <section>
+
+
+            <h2>
+                PHOTOGRAPHY + FILMMAKING
+            </h2>
+
+
+
+
+            <div class="projects">
+
+
+
+
+
+                <div class="project" onclick="openProject('liminalPhotos')">
+
+
+                    <img src="assets/Images/Photography/thedore.jpg">
+
+
+                    <h3>
+                        LIMINAL PHOTOGRAPHY
+                    </h3>
+
+
+                    <p>
+                        Photography exploring forgotten spaces and atmosphere.
+                    </p>
+
+
+                    <a href="#" onclick="event.preventDefault(); event.stopPropagation(); openProject('liminalPhotos')">
+                        VIEW PROJECT
+                    </a>
+
+
+                </div>
+
+
+
+
+            </div>
+
+
+        </section>
+
+
+
+
+
+
+
+
+<!-- PROJECT POPUP -->
+
+
+<div id="project-modal">
+
+
+<div id="project-window">
+
 
 
 <div class="window-bar">
 
-PORTFOLIO.EXE
 
-</div>
-
-
-
-<div class="window-content">
+<span id="project-title">
+PROJECT.EXE
+</span>
 
 
-<h1>
-PORTFOLIO<br>
-</h1>
 
-
-<p>
-All projects and experiments.
-</p>
+<button id="close-project">
+✕
+</button>
 
 
 </div>
 
 
+
+
+
+<div id="project-body">
+
+
+
+
+
+<div id="media-viewer">
 </div>
 
 
-</section>
+
+
+
+<div id="thumbnail-row">
+</div>
 
 
 
@@ -102,41 +403,17 @@ All projects and experiments.
 
 
 
-<!-- 3D RENDERS -->
-
-
-<section>
-
-
-<h2>
-3D_ARTWORK
-</h2>
-
-
-
-<div class="projects">
-
-
-
-<div class="project">
-
-
-<img src="assets/Images/render1.png">
+<div class="project-section">
 
 
 <h3>
-Liminal Spaces
+Description
 </h3>
 
 
-<p>
-Blender environment artwork and experiments.
+
+<p id="project-description">
 </p>
-
-
-<a href="#">
-VIEW PROJECT
-</a>
 
 
 </div>
@@ -145,25 +422,21 @@ VIEW PROJECT
 
 
 
-<div class="project">
 
 
-<img src="assets/Images/render2.png">
+
+<div class="project-section">
 
 
 <h3>
-Character Design
+Software
 </h3>
 
 
-<p>
-3D character modelling, materials and presentation.
-</p>
 
+<ul id="project-software">
 
-<a href="#">
-VIEW PROJECT
-</a>
+</ul>
 
 
 </div>
@@ -171,54 +444,22 @@ VIEW PROJECT
 
 
 
-</div>
-
-
-</section>
 
 
 
 
-
-
-
-
-
-<!-- GAME DEVELOPMENT -->
-
-
-<section>
-
-
-<h2>
-GAME_DEV
-</h2>
-
-
-
-<div class="projects">
-
-
-
-<div class="project">
-
-
-<img src="assets/Images/game1.png">
+<div class="project-section">
 
 
 <h3>
-    isochat
+Tags
 </h3>
 
 
-<p>
-A Pokemon Snap inspired urbex photography game [IN DEVELOPMENT].
-</p>
 
+<div id="project-tags">
 
-<a href="#">
-VIEW PROJECT
-</a>
+</div>
 
 
 </div>
@@ -226,87 +467,20 @@ VIEW PROJECT
 
 
 
-<div class="project">
-
-
-<img src="assets/Images/game2.png">
-
-
-<h3>
-WIZARD GAME PROTOTYPE
-</h3>
-
-
-<p>
-Experimental movement mechanics and playable concept for an "FPS" combat game featuring magic spells.
-</p>
- 
-
-<a href="#">
-VIEW PROJECT
-</a>
-
-
-</div>
-
 
 
 
 </div>
 
 
-</section>
 
+</div>
 
-
-
-
-
-
-
-<!-- Photography -->
-
-
-<section>
-
-
-<h2>
-PHOTOGRAPHY + FILMMAKING
-</h2>
-
-
-
-<div class="projects">
-
-
-<div class="project">
-
-
-<img src="assets/Images/asset1.png">
-
-
-<h3>
-ABSTRACT PHOTOGRAPHY
-</h3>
-
-
-<p>
-Photos I take when not commisioned by clients. 
-</p>
-
-
-<a href="#">
-VIEW PROJECT
-</a>
 
 
 </div>
 
 
-</div> 
-
-
-</section>
 
 
 
@@ -316,11 +490,15 @@ VIEW PROJECT
 
 <footer>
 
+
 <p>
-    2026 FIBLAY
+2026 FIBLAY
 </p>
 
+
 </footer>
+
+
 
 
 
@@ -328,7 +506,18 @@ VIEW PROJECT
 
 
 
+
+
+
+
+
+
+<script src="projects.js"></script>
+
+<script src="modal.js"></script>
+
 <script src="script.js"></script>
+
 
 
 </body>

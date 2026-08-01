@@ -37,7 +37,7 @@ const bootLines = [
 
     "",
 
-    "WELCOME TO FIBLAY.EXE"
+    "WELCOME TO FIBLAY.COM"
 
 ];
 
