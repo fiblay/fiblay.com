@@ -45,7 +45,7 @@ const bootLines = [
 let bootIndex = 0;
 
 
-
+ 
 function typeBoot(){
 
 

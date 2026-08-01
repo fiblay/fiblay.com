@@ -93,7 +93,7 @@ if(media.type === "youtube"){
     iframe.allowFullscreen = true;
 
     mediaViewer.appendChild(iframe);
-
+ 
 }
     }
 
