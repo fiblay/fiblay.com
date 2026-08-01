@@ -32,7 +32,7 @@ const bootLines = [
     "Scanning portfolio database...",
 
     "Projects found: 003",
-
+ 
     "System status: ONLINE",
 
     "",

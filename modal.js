@@ -21,7 +21,7 @@ const closeButton = document.getElementById("close-project");
 function loadMedia(media) {
 
 
-    mediaViewer.innerHTML = "";
+    mediaViewer.innerHTML = ""; 
 
 
 
