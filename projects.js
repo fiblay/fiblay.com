@@ -6,13 +6,16 @@ const projects = {
 
         gallery: [
 
-            "assets/Images/halls.jpg",
+            {
+                type: "image",
+                src: "assets/Images/halls.jpg"
+            }
 
         ],
 
         description:
-`My favourite render I have created.
-Modeled in Blender and composited in Photoshop.`,
+`                        My favourite render I have created. Modeled and Textured using Blender 4.1 and composited in
+                        Adobe Photoshop to give it the "digicam" feel.`,
 
         software: [
 
@@ -42,14 +45,26 @@ Modeled in Blender and composited in Photoshop.`,
 
         gallery:[
 
-            "assets/Images/staycool.png",
+            {
+                type: "image",
+                src: "assets/Images/staycool.png"
+            },
 
-            "assets/Images/PenguinRig.png"
+            {
+                type: "image",
+                src: "assets/Images/PenguinRig.png"
+            },
+
+            {
+                type: "image",
+                src: "assets/Images/penguinBlue.png"
+            },
 
         ],
 
         description:
-`Character made to learn rigging and animation.`,
+                        `Penguin Character I created to experiment with character design in Blender 5. I also used this
+                        character to learn rigging and animation, and will be using him in my current game project.`,
 
         software:[
 
@@ -61,7 +76,9 @@ Modeled in Blender and composited in Photoshop.`,
 
             "Character",
 
-            "Rigging"
+            "Rigging",
+
+            "Animation"
 
         ]
 
@@ -75,7 +92,10 @@ Modeled in Blender and composited in Photoshop.`,
 
         gallery:[
 
-            "assets/Images/project1.png"
+            {
+                type: "image",
+                src: "assets/Images/project1.png"
+            }
 
         ],
 
@@ -97,3 +117,4 @@ Modeled in Blender and composited in Photoshop.`,
     }
 
 };
+
